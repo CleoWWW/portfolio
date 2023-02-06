@@ -1313,7 +1313,7 @@ a:focus {
   height: 100%;
   display: flex;
   flex-direction: column;
-  scroll-snap-type: y mandatory;
+  //scroll-snap-type: y mandatory;
   border-right: 1px solid $border-color;
 
   @media screen and (max-width: 768px) {
