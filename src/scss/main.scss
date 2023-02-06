@@ -992,8 +992,8 @@ a:focus {
   .content--layout {
     grid-column: 3 / 11;
     grid-row: 4 / 11;
-    grid-template-columns: repeat(10, 128px);
-    grid-template-rows: repeat(9, 50px);
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(9, 1fr);
     min-height: 400px;
   }
 
