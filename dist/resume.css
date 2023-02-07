@@ -1,0 +1,181 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Lato", "Noto Sans TC", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333333;
+  background-color: #f5f6f7;
+}
+
+/* Header */
+header {
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  color: #666666;
+  background-color: #f5f6f7;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.08);
+}
+
+nav {
+  /*   position  */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
+}
+
+hr {
+  border: 0px;
+  height: 1px;
+  background: #333;
+  margin: 20px 0;
+  box-shadow: -1px 1px 0.5px rgba(255, 255, 255, 0.8);
+}
+
+.nav-title {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  color: #666666;
+}
+
+.social-media {
+  margin-right: 20px;
+  display: flex;
+}
+.social-media-link i {
+  color: #555;
+}
+.social-media-link i:hover {
+  color: #980004;
+}
+
+/* Main */
+main {
+  padding: 100px 20px;
+}
+
+h2 {
+  font-size: 32px;
+  margin: 24px 0 8px;
+}
+
+h3 {
+  font-size: 21px;
+  margin: 0 0 8px 0;
+  font-weight: 500;
+}
+
+section {
+  margin-bottom: 48px;
+}
+
+p {
+  color: #666666;
+}
+
+/* Personal Info */
+.personal-info {
+  text-align: center;
+  /* 內容置中 */
+}
+
+.avatar-img {
+  border-radius: 25px;
+  /* 圓框效果 */
+}
+
+.name {
+  font-size: 32px;
+  margin: 20px 0;
+}
+
+.social-media-link {
+  color: #999999;
+  text-decoration: none;
+  /* 沒有底線 */
+  margin: 0 5px;
+}
+
+.description {
+  text-align: left;
+}
+
+.title {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 14px;
+  /* 內容置中 */
+  letter-spacing: 2px;
+  /* 字元間距 */
+  color: #980004;
+}
+
+/* Skill Section */
+.skill-name {
+  border-top: 1px solid #999999;
+  padding-top: 16px;
+}
+
+/* Experience Section */
+hr {
+  border: 0px;
+  height: 1px;
+  background: #cccccc;
+  margin: 20px 0;
+}
+
+.company,
+.duration {
+  color: #666666;
+  font-size: 12px;
+  margin-right: 20px;
+}
+
+.fa-building,
+.fa-calendar-alt {
+  margin-right: 5px;
+}
+
+@media screen and (min-width: 576px) {
+  .skills-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .skill {
+    flex-basis: 30%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  main {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .personal-info {
+    flex-basis: 25%;
+  }
+
+  .experience {
+    flex-basis: 68%;
+  }
+
+  .experience-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .experience-item {
+    flex-basis: 30%;
+  }
+}
