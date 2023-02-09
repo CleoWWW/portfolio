@@ -41,7 +41,7 @@ const datas = [
     image: "https://imgpile.com/images/5CsSF2.png",
     menuTitle: "titleOne",
     //content
-    svg: `<path d="M 262.9,252.2 C 210.1,338.2 212.6,487.6 288.8,553.9 372.2,626.5 511.2,517.8 620.3,536.3 750.6,558.4 860.3,723 987.3,686.5 1089,657.3 1168,534.7 1173,429.2 1178,313.7 1096,189.1 995.1,130.7 852.1,47.07 658.8,78.95 498.1,119.2 410.7,141.1 322.6,154.8 262.9,252.2 Z" />`,
+    svg: "dist/svg2.svg",
     category: "VR",
     contentImg: "https://source.unsplash.com/1000x800/?food",
     contentTitle: "VR/02",
@@ -71,7 +71,7 @@ const datas = [
     image: "https://imgpile.com/images/5CsSF2.png",
     menuTitle: "titleTwo",
     //content
-    svg: `<path d="M 262.9,252.2 C 210.1,338.2 212.6,487.6 288.8,553.9 372.2,626.5 511.2,517.8 620.3,536.3 750.6,558.4 860.3,723 987.3,686.5 1089,657.3 1168,534.7 1173,429.2 1178,313.7 1096,189.1 995.1,130.7 852.1,47.07 658.8,78.95 498.1,119.2 410.7,141.1 322.6,154.8 262.9,252.2 Z" />`,
+    svg: "dist/svg3.svg",
     category: "VR",
     contentImg: "https://source.unsplash.com/1000x800/?food",
     contentTitle: "VR/PoXin",
@@ -102,7 +102,7 @@ const datas = [
     menuTitle: "titleTwo",
 
     //content
-    svg: `<path d="M 262.9,252.2 C 210.1,338.2 212.6,487.6 288.8,553.9 372.2,626.5 511.2,517.8 620.3,536.3 750.6,558.4 860.3,723 987.3,686.5 1089,657.3 1168,534.7 1173,429.2 1178,313.7 1096,189.1 995.1,130.7 852.1,47.07 658.8,78.95 498.1,119.2 410.7,141.1 322.6,154.8 262.9,252.2 Z" />`,
+    svg: "dist/svg4.svg",
     category: "UI",
     contentImg: "https://source.unsplash.com/1000x800/?food",
     contentTitle: "VR/PoXin",
@@ -133,7 +133,7 @@ const datas = [
     menuTitle: "titleTwo",
 
     //content
-    svg: `<path d="M 262.9,252.2 C 210.1,338.2 212.6,487.6 288.8,553.9 372.2,626.5 511.2,517.8 620.3,536.3 750.6,558.4 860.3,723 987.3,686.5 1089,657.3 1168,534.7 1173,429.2 1178,313.7 1096,189.1 995.1,130.7 852.1,47.07 658.8,78.95 498.1,119.2 410.7,141.1 322.6,154.8 262.9,252.2 Z" />`,
+    svg: "dist/svg1.svg",
     category: "UI",
     contentImg: "https://source.unsplash.com/1000x800/?people",
     contentTitle: "VR/PoXin",
@@ -164,7 +164,7 @@ const datas = [
     menuTitle: "titleThree",
 
     //content
-    svg: `<path d="M1160 316.389C1160 183.291 1005.52 73.4069 805.632 56.9163C741.732 21.4691 658.178 0.00020027 566.743 0.000192276C476.424 0.000184381 393.795 20.9482 330.203 55.6244C167.628 65.7283 39.9999 165.087 39.9999 286.167C39.9999 413.96 182.171 517.556 357.548 517.556C396.581 517.556 433.969 512.424 468.51 503.036C541.874 549.402 642.451 578 753.41 578C977.963 578 1160 460.873 1160 316.389Z" fill="#3C3C3C"/>`,
+    svg: "dist/svg2.svg",
     category: "UI ss dd sss",
     contentImg: "https://source.unsplash.com/1000x800/?people",
     contentTitle: "VR/PoXin",
@@ -195,7 +195,7 @@ const datas = [
     menuTitle: "titleFour",
 
     //content
-    svg: `<path d="M40 261.611C40 394.71 194.479 504.594 394.368 521.084C458.268 556.531 541.822 578 633.257 578C723.576 578 806.205 557.052 869.797 522.376C1032.37 512.272 1160 412.913 1160 291.833C1160 164.041 1017.83 60.4443 842.452 60.4443C803.419 60.4443 766.031 65.576 731.49 74.964C658.126 28.5982 557.549 0 446.59 0C222.037 0 40 117.127 40 261.611Z" fill="#3C3C3C"/>`,
+    svg: "dist/svg3.svg",
     category: "motion",
     contentImg: "https://source.unsplash.com/1000x800/?people",
     contentTitle: "VR/PoXin",
@@ -394,7 +394,7 @@ function showModal(id) {
       </video>
       <h2>${item.movieTitle}</h2>
           <p>${item.movieTitle}</p>`;
-    for (i = 0; i < num; i++) {
+    for (let i = 0; i < num; i++) {
       rawHTML += `
           <img src="${item.modalImgs[i]}" alt="">
           <h2>${item.modalTitles[i]}</h2>
