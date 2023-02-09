@@ -8,10 +8,10 @@ const datas = [
     id: 1,
     //menu
     title: "VR/01",
-    image: "dist/1-1.jpg",
+    image: "dist/1-1s.png",
     menuTitle: "titleOne",
     //content
-    svg: `<path d="M 262.9,252.2 C 210.1,338.2 212.6,487.6 288.8,553.9 372.2,626.5 511.2,517.8 620.3,536.3 750.6,558.4 860.3,723 987.3,686.5 1089,657.3 1168,534.7 1173,429.2 1178,313.7 1096,189.1 995.1,130.7 852.1,47.07 658.8,78.95 498.1,119.2 410.7,141.1 322.6,154.8 262.9,252.2 Z" />`,
+    svg: "dist/svg1.svg",
     category: "VR",
     contentImg: "dist/1-1.jpg",
     contentTitle: "標題<span>/VR01</span>",
@@ -22,7 +22,7 @@ const datas = [
     //modal
     modalCategory: "UI",
     modalImgs: [
-      "dist/1-1.jpg",
+      "dist/1-1x.jpg",
       "https://source.unsplash.com/1000x800/?people",
       "https://source.unsplash.com/1000x800/?nature",
       "https://source.unsplash.com/1000x800/?kid"
@@ -317,7 +317,8 @@ function renderContentList(data) {
     rawHTML += `
       <section class="block" id="${item.id}">
         <div class="shape__wrap item-parallax-media">
-          <svg class="shape--svg" width="1400" height="700" viewBox="0 0 1400 700">${item.svg}</svg> 
+   
+          <object class="shape--svg" data="${item.svg}"> </object>
         </div>
         <h2 class="content__main__category ">${item.category}</h2>
         <div class="content content--layout content--layout-${item.style} item-parallax-content">
@@ -325,7 +326,8 @@ function renderContentList(data) {
           <h3 class="content__title">${item.contentTitle}</h3>
           <p class="content__desc">${item.contentDesc}</p>
           <span class="content__time">${item.contentTime}</span>
-          <button id="${item.id}"class="content__link" onclick="">See More</button>
+          <button id="${item.id}" role="button" class="content__link" onclick="">See More</button>
+ 
         </div>
       </section>`;
   });
@@ -392,7 +394,7 @@ function showModal(id) {
       </video>
       <h2>${item.movieTitle}</h2>
           <p>${item.movieTitle}</p>`;
-    for (let i = 0; i < num; i++) {
+    for (i = 0; i < num; i++) {
       rawHTML += `
           <img src="${item.modalImgs[i]}" alt="">
           <h2>${item.modalTitles[i]}</h2>
@@ -416,7 +418,6 @@ function showModal(id) {
   rawHTML += `</div></div>`;
 
   modalRenderNode.innerHTML = rawHTML;
-
 }
 
 function closeM() {
