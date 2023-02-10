@@ -377,7 +377,7 @@ function showModal(id) {
   const modalBtn = document.querySelector("#button-close");
 
   modalCategoryTitle.innerText = item.modalCategory;
-  modalBtn.innerHTML = `<a href="#${item.id}" class="btn-close" >← Back</a>`;
+  modalBtn.innerHTML = `<a href="#${item.id}" class="btn-close" ></a>`;
 
   let rawHTML = "";
 
