@@ -912,7 +912,7 @@ a:focus {
   color: #fff;
   cursor: pointer;
   &::after {
-    content: url("data:image/svg+xml; utf8,<svg width='49' height='49' viewBox='0 0 49 49' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M19.0503 24.0833L0 43.1335L4.94975 48.0833L24 29.033L43.1838 48.2168L48.1335 43.267L28.9497 24.0833L48.0833 4.94975L43.1335 0L24 19.1335L5 0.133514L0.0502526 5.08326L19.0503 24.0833Z' fill='#D9D9D9'/></svg>");
+    content: url("data:image/svg+xml;utf8,<svg width='49' height='49' viewBox='0 0 49 49' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M19.0503 24.0833L0 43.1335L4.94975 48.0833L24 29.033L43.1838 48.2168L48.1335 43.267L28.9497 24.0833L48.0833 4.94975L43.1335 0L24 19.1335L5 0.133514L0.0502526 5.08326L19.0503 24.0833Z' fill='#D9D9D9'/></svg>");
   }
   &:hover {
     background-color: rgba(0, 0, 0, 0.1);
@@ -1406,8 +1406,8 @@ a:focus {
   .block {
     padding: 1rem;
     height: 100vh;
-    grid-template-columns: 15% repeat(10, 1fr) 15%;
-    grid-template-rows: 15% repeat(6, 1fr) 15%;
+    grid-template-columns: minmax(10%, 15%) repeat(10, 1fr) minmax(10%, 15%);
+    grid-template-rows: minmax(10%, 15%) repeat(6, 1fr) minmax(10%, 15%);
   }
   .shape__wrap {
     grid-column: 2 / 12;
@@ -1422,35 +1422,35 @@ a:focus {
   .content--layout {
     grid-column: 2 / 12;
     grid-row: 3 / 7;
-    grid-template-areas:
-      "image title title"
-      "image desc desc"
-      "image link link";
-    min-height: 400px;
   }
 
   .content--layout-1 {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 450px)) repeat(
+        auto-fill,
+        minmax(525px, 675px)
+      );
+    grid-template-rows: repeat(3, minmax(115px, 1fr));
     .content__img {
-      grid-area: image;
-      opacity: 0.8;
+      grid-column: 1 / 2;
+      grid-row: 1 / 4;
       width: 40vw;
       height: 40vw;
       max-width: 450px;
       max-height: 450px;
-      margin-right: 2rem;
     }
     .content__title {
-      grid-area: title;
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
       font-size: 3.25rem;
     }
     .content__desc {
-      grid-area: desc;
-      grid-column: 4 / 8;
-      grid-row: 4 / 7;
+      grid-column: 2 / 3;
+      grid-row: 2/ 3;
       font-size: 1.5rem;
     }
     .content__link {
-      grid-area: link;
+      grid-column: 2 / 3;
+      grid-row: 3 / 4;
       font-size: 1.5rem;
       &::after {
         content: url("data:image/svg+xml; utf8,<svg width='48' height='48' viewBox='0 0 54 54' fill='none' xmlns='http://www.w3.org/2000/svg'><circle cx='27' cy='27' r='27' fill='white'/><path d='M18.7349 16.5308H36.3675V34.1634' stroke='black' stroke-width='2'/><path d='M17.3286 35.772L36.0309 17.0697' stroke='black' stroke-width='2'/></svg>");
@@ -1466,23 +1466,28 @@ a:focus {
   }
 
   .content--layout-2 {
-    grid-template-areas:
-      "image title title"
-      "image desc desc"
-      "image link link";
+    grid-template-columns: repeat(auto-fill, minmax(525px, 675px)) repeat(
+        auto-fill,
+        minmax(350px, 450px)
+      );
+    grid-template-rows: repeat(3, minmax(115px, 1fr));
     .content__img {
-      grid-area: image;
+      grid-column: 2 / 3;
+      grid-row: 1 / 4;
     }
     .content__desc {
-      grid-area: desc;
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
       font-size: 1.5rem;
     }
     .content__title {
-      grid-area: title;
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
       font-size: 3.25rem;
     }
     .content__link {
-      grid-area: link;
+      grid-column: 1 / 2;
+      grid-row: 3 / 4;
     }
     .content__time {
       grid-column: -1 / -2;
