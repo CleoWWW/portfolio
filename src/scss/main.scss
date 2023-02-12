@@ -44,12 +44,14 @@ $boxes: 7;
 }
 
 %title-modal-subTitle {
+  margin: 1.5rem 0 1rem 0;
   font-family: $title-font-ch;
   font-weight: $font-w;
   color: $subtitle-color;
   font-size: 1.5rem;
 }
 %title-modal-subContent {
+  margin-bottom: 2rem;
   font-family: $title-font-ch;
   font-weight: $font-w-lt;
   color: $subtitle-color;
@@ -837,8 +839,8 @@ a:focus {
 
   cursor: pointer;
   &::after {
-    content: url("data:image/svg+xml; utf8,<svg width='24' height='24' viewBox='0 0 54 54' fill='none' xmlns='http://www.w3.org/2000/svg'><circle cx='27' cy='27' r='27' fill='white'/><path d='M18.7349 16.5308H36.3675V34.1634' stroke='black' stroke-width='2'/><path d='M17.3286 35.772L36.0309 17.0697' stroke='black' stroke-width='2'/></svg>");
-
+    content: url("data:image/svg+xml; utf8,<svg id='arrow' width='24' height='24' viewBox='0 0 54 54' fill='none' xmlns='http://www.w3.org/2000/svg'><circle cx='27' cy='27' r='27' fill='white'/><path d='M18.7349 16.5308H36.3675V34.1634' stroke='black' stroke-width='2'/><path d='M17.3286 35.772L36.0309 17.0697' stroke='black' stroke-width='2'/></svg>");
+    display: block;
     margin-left: 0.5rem;
   }
 }
@@ -846,17 +848,16 @@ a:focus {
 .content__link:hover {
   text-decoration: none;
 }
-.content_link:hover {
-  &::after {
-    circle[fill] {
-      fill: #2858d7;
-    }
-    path[stroke] {
-      stroke: white;
-    }
+.content__link:hover::after {
+  filter: invert(0.2);
+}
+.content--layout-1 {
+  .content__title,
+  .content__desc,
+  .content__link {
+    justify-self: end;
   }
 }
-
 /* Different layouts */
 
 /* layout-2 */
@@ -897,32 +898,35 @@ a:focus {
 .btn-close {
   border: none;
   background-color: rgba(0, 0, 0, 0);
-  width: 3rem;
-  height: 3rem;
+  width: 3.25rem;
+  height: 3.25rem;
   font-size: 1.25rem;
   border-radius: 100%;
   position: absolute;
   text-align: center;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  justify-self: center;
+
   right: 36px;
   top: 36px;
   padding: 0;
   color: #fff;
   cursor: pointer;
-  &::before {
+  &::before,
+  &::after {
     content: "";
-    width: 61px;
-    height: 7px;
+    width: 80%;
+    height: 6px;
     background: #d9d9d9;
+    position: absolute;
+  }
+  &::before {
     transform: rotate(-45deg);
   }
   &::after {
-    content: "";
-    width: 61px;
-    height: 7px;
-    background: #d9d9d9;
     transform: rotate(45deg);
   }
   &:hover {
@@ -963,8 +967,8 @@ a:focus {
   position: fixed;
   //display: flex;
   //justify-content: center;
-  width: 100%;
-  padding-top: 56px;
+
+  padding-top: 60px;
   background-color: #111;
   width: 100%;
   height: 100%;
@@ -1117,7 +1121,7 @@ a:focus {
 .blog-article {
   h2 {
     line-height: 1.2;
-    margin: 8px 0 8px;
+
     @extend %title-modal-subTitle;
     span {
       font-family: $subtitle-font;
@@ -1126,7 +1130,7 @@ a:focus {
 
   p {
     line-height: 1.5;
-    margin: 0.75rem 0 1.5rem 0;
+
     @extend %title-modal-subContent;
     span {
       font-family: $subtitle-font;
@@ -1275,7 +1279,7 @@ a:focus {
       &:hover {
         text-decoration: none;
         ellipse[fill] {
-          fill: var(--background-color);
+          fill: #666666;
         }
         path[stroke] {
           stroke: white;
@@ -1324,8 +1328,8 @@ a:focus {
     width: 100%;
     height: 36px;
     .hamburger-icon {
-      width: 48px;
-      height: 36px;
+      width: 36px;
+      height: 32px;
       .border {
         height: 3px;
       }
@@ -1434,10 +1438,18 @@ a:focus {
     grid-column: 2 / 12;
     grid-row: 3 / 7;
   }
+  .content__link {
+    font-size: 1.5rem;
+    &::after {
+      content: url("data:image/svg+xml; utf8,<svg width='48' height='48' viewBox='0 0 54 54' fill='none' xmlns='http://www.w3.org/2000/svg'><circle cx='27' cy='27' r='27' fill='white'/><path d='M18.7349 16.5308H36.3675V34.1634' stroke='black' stroke-width='2'/><path d='M17.3286 35.772L36.0309 17.0697' stroke='black' stroke-width='2'/></svg>");
 
+      margin-left: 1rem;
+    }
+  }
   .content--layout-1 {
     grid-template-columns: repeat(5, minmax(200px, 268px));
     grid-template-rows: repeat(3, minmax(115px, 1fr));
+
     .content__img {
       grid-column: 1 / 3;
       grid-row: 1 / 4;
@@ -1459,12 +1471,6 @@ a:focus {
     .content__link {
       grid-column: 3 / 6;
       grid-row: 3 / 4;
-      font-size: 1.5rem;
-      &::after {
-        content: url("data:image/svg+xml; utf8,<svg width='48' height='48' viewBox='0 0 54 54' fill='none' xmlns='http://www.w3.org/2000/svg'><circle cx='27' cy='27' r='27' fill='white'/><path d='M18.7349 16.5308H36.3675V34.1634' stroke='black' stroke-width='2'/><path d='M17.3286 35.772L36.0309 17.0697' stroke='black' stroke-width='2'/></svg>");
-
-        margin-left: 1rem;
-      }
     }
     .content__time {
       grid-column: 1 / 2;
