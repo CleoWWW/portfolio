@@ -29,8 +29,7 @@ const datas = [
     ],
     modalTitles: ["VR/m1", "VR/m2", "VR/m3", "VR/m4"],
     modalDesc: ["VR/desc1", "VR/desc2", "desc2", "desc4"],
-    modalMovie:
-      "https://endtest-videos.s3-us-west-2.amazonaws.com/documentation/endtest_data_driven_testing_csv.mp4",
+    modalMovie:"https://player.vimeo.com/video/798433199?h=40b562fd7f&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     movieTitle: "movietitle",
     movieDesc: "movie",
     hasMovie: "true"
@@ -60,10 +59,10 @@ const datas = [
     modalTitles: ["VR/m1", "VR/m2", "VR/m3", "VR/m4"],
     modalDesc: ["VR/desc1", "VR/desc2", "desc2", "desc4"],
     modalMovie:
-      "https://endtest-videos.s3-us-west-2.amazonaws.com/documentation/endtest_data_driven_testing_csv.mp4",
+      "dist/fin3.mp4",
     movieTitle: "movietitle",
     movieDesc: "movie",
-    hasMovie: "false"
+    hasMovie: "true"
   },
   {
     id: 3,
@@ -121,10 +120,10 @@ const datas = [
     modalTitles: ["VR/m1", "VR/m2", "VR/m3", "VR/m4"],
     modalDesc: ["VR/desc1", "VR/desc2", "desc2", "desc4"],
     modalMovie:
-      "https://endtest-videos.s3-us-west-2.amazonaws.com/documentation/endtest_data_driven_testing_csv.mp4",
+      "dist/fin4.mp4",
     movieTitle: "movietitle",
     movieDesc: "movie",
-    hasMovie: "false"
+    hasMovie: "true"
   },
   {
     id: 5,
@@ -392,6 +391,7 @@ function showModal(id) {
       <video autoplay="" loop="" controls="" width="100%" height="auto">
         <source type="video/mp4" src="${item.modalMovie}">
       </video>
+      
       <h2>${item.movieTitle}</h2>
           <p>${item.movieTitle}</p>`;
     for (let i = 0; i < num; i++) {
