@@ -15,7 +15,7 @@ const datas = [
     category: "App redesign",
     contentImg: "dist/0-1s.jpg",
     contentTitle: "ReDesig",
-    contentDesc: "App ReDesig<br>使用軟體：Figma<br>負責項目:UI設計",
+    contentDesc: "App ReDesig<br>使用軟體：Figma<br>負責項目：UI設計",
     contentTime: "2023",
     style: "1",
 
@@ -27,7 +27,7 @@ const datas = [
       "dist/0-3.jpg"
     ],
     modalTitles: ["UI/app redesign", "UI/app redesign", "UI/app redesign"],
-    modalDesc: ["VR/desc1", "VR/desc2", "desc2"],
+    modalDesc: ["電商app redesign", "電商app redesign", "電商app redesign"],
     modalMovie:"dist/fin0.mp4",
     movieTitle: "prototype",
     movieDesc: "movie",
