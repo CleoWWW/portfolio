@@ -7,16 +7,16 @@ const datas = [
   {
     id: 1,
     //menu
-    title: "VR/01",
-    image: "dist/1-1s.png",
+    title: "App redesign",
+    image: "dist/0-1sx5.jpg",
     menuTitle: "titleOne",
     //content
     svg: "dist/svg1.svg",
-    category: "VR",
-    contentImg: "dist/1-1.jpg",
-    contentTitle: "標題<span>/VR01</span>",
-    contentDesc: "use tool: PS<br>AI",
-    contentTime: "2014",
+    category: "App redesign",
+    contentImg: "dist/0-1s.jpg",
+    contentTitle: "ReDesig",
+    contentDesc: "use tool: figma",
+    contentTime: "2023",
     style: "1",
 
     //modal
