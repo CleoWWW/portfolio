@@ -496,7 +496,7 @@ a:focus {
     grid-template-areas:
       "header ham"
       "content content"
-      "copyright copyright";
+      "copyright cv";
     a {
       pointer-events: auto;
     }
@@ -504,11 +504,25 @@ a:focus {
 }
 .copyright {
   position: fixed;
-  bottom: 10px;
+  bottom: 1.5rem;
 
   @extend %footer-copy;
   grid-area: copyright;
 }
+.cv {
+  grid-area: cv;
+  @extend %footer-contact;
+  color: #eee;
+  display: flex;
+  align-self: flex-end;
+  justify-self: flex-end;
+  justify-content: flex-end;
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 /*nav-marquee*/
 
 .menu-wrap {
