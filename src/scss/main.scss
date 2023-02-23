@@ -97,6 +97,15 @@ $boxes: 7;
     font-family: $title-font;
   }
 }
+%desc-content-s {
+  font-family: $title-font-ch;
+  font-weight: $font-w-lt;
+  font-size: 0.875rem;
+  color: $subtitle-color;
+  span {
+    font-family: $title-font;
+  }
+}
 %footer-contact {
   font-family: $title-font;
   font-weight: $font-w-lt;
@@ -827,8 +836,7 @@ a:focus {
   margin: 0;
   z-index: 10;
   cursor: default;
-  @extend %desc-content;
-  font-size: 0.875rem;
+  @extend %desc-content-s;
 }
 
 .content__img,
