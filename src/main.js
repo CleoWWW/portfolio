@@ -15,172 +15,177 @@ const datas = [
     category: "App redesign",
     contentImg: "dist/0-1s.jpg",
     contentTitle: "ReDesig",
-    contentDesc: "use tool: figma",
+    contentDesc: "App ReDesig<br>使用軟體：Figma<br>負責項目:UI設計",
     contentTime: "2023",
     style: "1",
 
     //modal
     modalCategory: "UI",
     modalImgs: [
-      "dist/1-1x.jpg",
-      "https://source.unsplash.com/1000x800/?people",
-      "https://source.unsplash.com/1000x800/?nature",
-      "https://source.unsplash.com/1000x800/?kid"
+      "dist/0-1.jpg",
+      "dist/0-2.jpg",
+      "dist/0-3.jpg"
     ],
-    modalTitles: ["VR/m1", "VR/m2", "VR/m3", "VR/m4"],
-    modalDesc: ["VR/desc1", "VR/desc2", "desc2", "desc4"],
-    modalMovie:"https://player.vimeo.com/video/798433199?h=40b562fd7f&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-    movieTitle: "movietitle",
+    modalTitles: ["UI/app redesign", "UI/app redesign", "UI/app redesign"],
+    modalDesc: ["VR/desc1", "VR/desc2", "desc2"],
+    modalMovie:"dist/fin0.mp4",
+    movieTitle: "prototype",
     movieDesc: "movie",
     hasMovie: "true"
   },
   {
     id: 2,
-    title: "VR/02",
-    image: "https://imgpile.com/images/5CsSF2.png",
-    menuTitle: "titleOne",
+    title: "VR / UI",
+    image: "dist/1-1sx5.jpg",
+    menuTitle: "titleTwo",
     //content
     svg: "dist/svg2.svg",
-    category: "VR",
-    contentImg: "https://source.unsplash.com/1000x800/?food",
-    contentTitle: "VR/02",
-    contentDesc: "poabciiii",
-    contentTime: "2014",
+    category: "VR / UI",
+    contentImg: "dist/1-1s.jpg",
+    contentTitle: "<span>VR<span> 日出印象",
+    contentDesc: "VR 看房導覽<br>使用軟體：Figma,unreal,3Dvista<br>負責項目:unreal介面,UI設計,3Dvista功能開發,UI設計",
+    contentTime: "2021",
     style: "2",
 
     //modal
-    modalCategory: "UI",
+    modalCategory: "VR",
     modalImgs: [
-      "https://source.unsplash.com/1000x800/?food",
-      "https://source.unsplash.com/1000x800/?people",
-      "https://source.unsplash.com/1000x800/?nature",
-      "https://source.unsplash.com/1000x800/?kid"
+      "dist/1-1.jpg",
+      "dist/1-2.jpg",
+      "dist/1-3.jpg"
     ],
-    modalTitles: ["VR/m1", "VR/m2", "VR/m3", "VR/m4"],
-    modalDesc: ["VR/desc1", "VR/desc2", "desc2", "desc4"],
-    modalMovie:
-      "dist/fin3.mp4",
-    movieTitle: "movietitle",
-    movieDesc: "movie",
+    modalTitles: ["康寶日出印象 VR看房導覽", "康寶日出印象 VR看房導覽", "康寶日出印象 VR360看房導覽"],
+    modalDesc: [
+      "此產品可以在4k大型螢幕上觀看操作,也能在手機上操作,電腦版本使用unreal開發,手機版本使用3Dvista開發", 
+      "此產品可以在4k大型螢幕上觀看操作,也能在手機上操作,電腦版本使用unreal開發,手機版本使用3Dvista開發", 
+      "手機版本使用3Dvista開發,可以手機線上專人聯絡引導看房"],
+    modalMovie:"dist/fin4.mp4",
+    movieTitle: "康寶日出印象 VR看房導覽",
+    movieDesc: "看房導覽主要在4K螢幕，有另外開發手機版本",
     hasMovie: "true"
   },
   {
     id: 3,
-    title: "VR/03",
-    image: "https://imgpile.com/images/5CsSF2.png",
+    title: "VR / UI",
+    image: "dist/2-1sx5.jpg",
     menuTitle: "titleTwo",
     //content
     svg: "dist/svg3.svg",
-    category: "VR",
-    contentImg: "https://source.unsplash.com/1000x800/?food",
-    contentTitle: "VR/PoXin",
-    contentDesc: "poabciiii",
-    contentTime: "2014",
-    style: 3,
-
-    //modal
-    modalCategory: "UI",
-    modalImgs: [
-      "https://source.unsplash.com/1000x800/?food",
-      "https://source.unsplash.com/1000x800/?people",
-      "https://source.unsplash.com/1000x800/?nature",
-      "https://source.unsplash.com/1000x800/?kid"
-    ],
-    modalTitles: ["VR/m1", "VR/m2", "VR/m3", "VR/m4"],
-    modalDesc: ["VR/desc1", "VR/desc2", "desc2", "desc4"],
-    modalMovie:
-      "https://endtest-videos.s3-us-west-2.amazonaws.com/documentation/endtest_data_driven_testing_csv.mp4",
-    movieTitle: "movietitle",
-    movieDesc: "movie",
-    hasMovie: "false"
-  },
-  {
-    id: 4,
-    title: "UI/01",
-    image: "https://imgpile.com/images/5CsSF2.png",
-    menuTitle: "titleTwo",
-
-    //content
-    svg: "dist/svg4.svg",
-    category: "UI",
-    contentImg: "https://source.unsplash.com/1000x800/?food",
-    contentTitle: "VR/PoXin",
-    contentDesc: "poabciiii",
-    contentTime: "2014",
-    style: 4,
-
-    //modal
-    modalCategory: "UI",
-    modalImgs: [
-      "https://source.unsplash.com/1000x800/?food",
-      "https://source.unsplash.com/1000x800/?people",
-      "https://source.unsplash.com/1000x800/?nature",
-      "https://source.unsplash.com/1000x800/?kid"
-    ],
-    modalTitles: ["VR/m1", "VR/m2", "VR/m3", "VR/m4"],
-    modalDesc: ["VR/desc1", "VR/desc2", "desc2", "desc4"],
-    modalMovie:
-      "dist/fin4.mp4",
-    movieTitle: "movietitle",
-    movieDesc: "movie",
-    hasMovie: "true"
-  },
-  {
-    id: 5,
-    title: "VR/PoXin05",
-    image: "https://source.unsplash.com/300x300/?people",
-    menuTitle: "titleTwo",
-
-    //content
-    svg: "dist/svg1.svg",
-    category: "UI",
-    contentImg: "https://source.unsplash.com/1000x800/?people",
-    contentTitle: "VR/PoXin",
-    contentDesc: "poabciiii",
-    contentTime: "2014",
+    category: "VR / UI",
+    contentImg: "dist/2-1s.jpg",
+    contentTitle: "寶欣上漾",
+    contentDesc: "VR 看房導覽<br>使用軟體：Figma,unreal,3Dvista<br>負責項目:unreal介面,UI設計,3Dvista開發",
+    contentTime: "2022",
     style: 1,
 
     //modal
     modalCategory: "UI",
     modalImgs: [
-      "https://source.unsplash.com/1000x800/?food",
-      "https://source.unsplash.com/1000x800/?people",
-      "https://source.unsplash.com/1000x800/?nature",
-      "https://source.unsplash.com/1000x800/?kid"
+      "dist/2-1.jpg",
+      "dist/2-2.jpg",
+      "dist/2-3.jpg",
+      "dist/2-4.jpg"
     ],
-    modalTitles: ["VR/m1", "VR/m2", "VR/m3", "VR/m4"],
-    modalDesc: ["VR/desc1", "VR/desc2", "desc2", "desc4"],
+    modalTitles: [
+      "寶欣上漾 VR看房導覽", 
+      "寶欣上漾 VR看房導覽", 
+      "寶欣上漾 VR看房導覽",
+      "寶欣上漾 VR看房導覽"],
+    modalDesc: [
+      "此產品可以在4k大型螢幕上觀看操作,使用unreal開發",
+      "此產品可以在4k大型螢幕上觀看操作,使用unreal開發",
+      "此產品可以在4k大型螢幕上觀看操作,使用unreal開發",
+      "此產品可以在4k大型螢幕上觀看操作,使用unreal開發"],
     modalMovie:
-      "https://endtest-videos.s3-us-west-2.amazonaws.com/documentation/endtest_data_driven_testing_csv.mp4",
+      "",
+    movieTitle: "",
+    movieDesc: "movie",
+    hasMovie: "false"
+  },
+  {
+    id: 4,
+    title: "VR360",
+    image: "dist/3-1sx5.jpg",
+    menuTitle: "titleTwo",
+
+    //content
+    svg: "dist/svg4.svg",
+    category: "VR360",
+    contentImg: "dist/3-1s.jpg",
+    contentTitle: "遠雄豐河",
+    contentDesc: "VR360看房導覽<br>使用軟體：AdobeXD,3Dvista<br>負責項目:3Dvista介面,UI設計,3Dvista開發",
+    contentTime: "2021",
+    style: 2,
+
+    //modal
+    modalCategory: "VR",
+    modalImgs: [
+      "dist/3-1.jpg",
+    ],
+    modalTitles: ["VR360"],
+    modalDesc: [
+      "手機平板版本都使用3Dvista開發"
+    ],
+    modalMovie:
+      "",
+    movieTitle: "movietitle",
+    movieDesc: "movie",
+    hasMovie: "false"
+  },
+  {
+    id: 5,
+    title: "Web",
+    image: "dist/6-1sx5.jpg",
+    menuTitle: "titleThree",
+
+    //content
+    svg: "dist/svg1.svg",
+    category: "Web",
+    contentImg: "dist/6-1s.jpg",
+    contentTitle: "cw portfolio",
+    contentDesc: "作品集<br>使用軟體：Figma,VisualStudioCode<br>負責項目:介面UI設計,網頁前端開發",
+    contentTime: "2023",
+    style: 1,
+
+    //modal
+    modalCategory: "Web",
+    modalImgs: [
+      "dist/6-1.jpg",
+      "dist/6-2.jpg"
+    ],
+    modalTitles: ["Web / portfolio", "Web / portfolio"],
+    modalDesc: [
+      "作品集規劃近期作品,類型從平面.插畫.動畫到介面設計.RWD網頁設計", 
+      "作品集規劃近期作品,類型從平面.插畫.動畫到介面設計.RWD網頁設計"],
+    modalMovie:
+      "",
     movieTitle: "movietitle",
     movieDesc: "movie",
     hasMovie: "false"
   },
   {
     id: 6,
-    title: "VR/06",
-    image: "https://source.unsplash.com/300x300/?people",
+    title: "Web",
+    image: "dist/7-1sx5.jpg",
     menuTitle: "titleThree",
 
     //content
     svg: "dist/svg2.svg",
-    category: "UI ss dd sss",
-    contentImg: "https://source.unsplash.com/1000x800/?people",
-    contentTitle: "VR/PoXin",
-    contentDesc: "poabciiii",
-    contentTime: "2014",
-    style: 1,
+    category: "Web",
+    contentImg: "dist/7-1s.jpg",
+    contentTitle: "遠雄幸福城",
+    contentDesc: "RWD<br>使用軟體：AdobeXD<br>負責項目:介面UI設計",
+    contentTime: "2021",
+    style: 2,
 
     //modal
-    modalCategory: "UI",
+    modalCategory: "Web",
     modalImgs: [
-      "https://source.unsplash.com/1000x800/?food",
-      "https://source.unsplash.com/1000x800/?people",
-      "https://source.unsplash.com/1000x800/?nature",
-      "https://source.unsplash.com/1000x800/?kid"
+      "dist/7-1.jpg",
+      "dist/7-2.jpg"
     ],
-    modalTitles: ["VR/m1", "VR/m2", "VR/m3", "VR/m4"],
-    modalDesc: ["VR/desc1", "VR/desc2", "desc2", "desc4"],
+    modalTitles: ["RWD", "RWD"],
+    modalDesc: ["遠雄幸福城RWD設計", "遠雄幸福城RWD設計"],
     modalMovie:
       "https://endtest-videos.s3-us-west-2.amazonaws.com/documentation/endtest_data_driven_testing_csv.mp4",
     movieTitle: "movietitle",
@@ -189,34 +194,119 @@ const datas = [
   },
   {
     id: 7,
-    title: "VR/07",
-    image: "https://source.unsplash.com/300x300/?people",
+    title: "Board",
+    image: "dist/4-1sx5.jpg",
     menuTitle: "titleFour",
 
     //content
     svg: "dist/svg3.svg",
-    category: "motion",
-    contentImg: "https://source.unsplash.com/1000x800/?people",
-    contentTitle: "VR/PoXin",
-    contentDesc: "poabciiii",
+    category: "Board",
+    contentImg: "dist/4-1s.jpg",
+    contentTitle: "精銳雲",
+    contentDesc: "電子錶板<br>使用軟體：AdobeXD.Flash<br>負責項目:介面UI設計,FLASH開發",
+    contentTime: "2015",
+    style: 1,
+
+    //modal
+    modalCategory: "Board",
+    modalImgs: [
+      "dist/4-1.jpg",
+      "dist/4-2.jpg",
+      "dist/4-3.jpg"
+    ],
+    modalTitles: ["精銳雲", "精銳雲", "精銳雲"],
+    modalDesc: ["精銳雲電子錶板", "精銳雲電子錶板", "精銳雲電子錶板"],
+    modalMovie:
+      "dist/fin6.mp4",
+    movieTitle: "精銳雲",
+    movieDesc: "精銳雲電子錶板",
+    hasMovie: "true"
+  },
+  {
+    id: 8,
+    title: "Board",
+    image: "dist/5-1sx5.jpg",
+    menuTitle: "titleFour",
+
+    //content
+    svg: "dist/svg3.svg",
+    category: "Board",
+    contentImg: "dist/5-1s.jpg",
+    contentTitle: "上碧潭",
+    contentDesc: "電子錶板<br>使用軟體：AdobeXD.Flash<br>負責項目:介面UI設計,FLASH開發",
     contentTime: "2014",
     style: 2,
 
     //modal
-    modalCategory: "motion",
+    modalCategory: "Board",
     modalImgs: [
-      "https://source.unsplash.com/1000x800/?food",
-      "https://source.unsplash.com/1000x800/?people",
-      "https://source.unsplash.com/1000x800/?nature",
-      "https://source.unsplash.com/1000x800/?kid"
+      "dist/5-1.jpg",
+      "dist/5-2.jpg"  
     ],
-    modalTitles: ["VR/m1", "VR/m2", "VR/m3", "VR/m4"],
-    modalDesc: ["VR/desc1", "VR/desc2", "desc2", "desc4"],
+    modalTitles: ["上碧潭", "上碧潭"],
+    modalDesc: ["上碧潭電子錶板", "上碧潭電子錶板"],
     modalMovie:
-      "https://endtest-videos.s3-us-west-2.amazonaws.com/documentation/endtest_data_driven_testing_csv.mp4",
-    movieTitle: "movietitle",
-    movieDesc: "movie",
-    hasMovie: "false"
+      "dist/fin3.mp4",
+    movieTitle: "上碧潭",
+    movieDesc: "上碧潭電子錶板",
+    hasMovie: "true"
+  },
+  {
+    id: 9,
+    title: "Motion",
+    image: "dist/8-1sx5.jpg",
+    menuTitle: "titleFour",
+
+    //content
+    svg: "dist/svg3.svg",
+    category: "Motion",
+    contentImg: "dist/8-1s.jpg",
+    contentTitle: "遠雄之星",
+    contentDesc: "電子錶板開頭動畫<br>使用軟體：Photoshop.Flash.AE<br>負責項目:插畫設計，動畫製作",
+    contentTime: "2016",
+    style: 1,
+
+    //modal
+    modalCategory: "film",
+    modalImgs: [
+      "dist/8-1.jpg"
+    ],
+    modalTitles: ["遠雄之星"],
+    modalDesc: ["電子錶板開頭動畫"],
+    modalMovie:
+      "dist/fin2.mp4",
+    movieTitle: "遠雄之星",
+    movieDesc: "電子錶板開頭動畫",
+    hasMovie: "true"
+  },
+  {
+    id: 10,
+    title: "Motion",
+    image: "dist/9-1sx5.jpg",
+    menuTitle: "titleFour",
+
+    //content
+    svg: "dist/svg3.svg",
+    category: "Motion",
+    contentImg: "dist/9-1s.jpg",
+    contentTitle: "技佳大河琉御",
+    contentDesc: "電子錶板開頭動畫<br>使用軟體：Photoshop.Flash.AE<br>負責項目:插畫設計，動畫製作",
+    contentTime: "2017",
+    style: 2,
+
+    //modal
+    modalCategory: "film",
+    modalImgs: [
+      "dist/9-1.jpg",
+      
+    ],
+    modalTitles: ["技佳大河琉御"],
+    modalDesc: ["電子錶板開頭動畫"],
+    modalMovie:
+      "dist/fin.mp4",
+    movieTitle: "技佳大河琉御",
+    movieDesc: "電子錶板開頭動畫",
+    hasMovie: "true"
   }
 ];
 
@@ -250,7 +340,7 @@ function renderMenuList(data) {
   let rawHTML = "";
   let rawHTMLaa = `
     <div class="menu__item">
-      <a href="#1" class="menu__item-link">titleO</a>
+      <a href="#1" class="menu__item-link">#redesign</a>
         <div class="marquee">
           <div class="marquee__inner-wrap">
             <div class="marquee__inner">`;
@@ -265,7 +355,7 @@ function renderMenuList(data) {
 
   let rawHTMLbb = `
     <div class="menu__item">
-      <a href="#1" class="menu__item-link">title10</a>
+      <a href="#2" class="menu__item-link">#UI VR/VR360 </a>
         <div class="marquee">
           <div class="marquee__inner-wrap">
             <div class="marquee__inner">`;
@@ -280,7 +370,7 @@ function renderMenuList(data) {
 
   let rawHTMLcc = `
     <div class="menu__item">
-      <a href="#1" class="menu__item-link">title100</a>
+      <a href="#5" class="menu__item-link">#UI / Web</a>
         <div class="marquee">
           <div class="marquee__inner-wrap">
             <div class="marquee__inner">`;
@@ -295,7 +385,7 @@ function renderMenuList(data) {
 
   let rawHTMLdd = `
     <div class="menu__item">
-      <a href="#1" class="menu__item-link">title299</a>
+      <a href="#7" class="menu__item-link">#Board #motion #illustration</a>
         <div class="marquee">
           <div class="marquee__inner-wrap">
             <div class="marquee__inner">`;
