@@ -274,7 +274,7 @@ const datas = [
       "dist/bag30.jpg",
       "dist/V1p1.jpg" 
     ],
-    modalTitles: ["國美珩月", "國美珩月"],
+    modalTitles: ["國美珩月", "國美珩月","國美珩月","國美珩月"],
     modalDesc: ["國美珩月banner", "國美珩月banner","國美珩月提袋","國美珩月戰旗"],
     modalMovie:
       "dist/fin3.mp4",
