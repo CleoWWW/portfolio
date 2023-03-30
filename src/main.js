@@ -253,6 +253,37 @@ const datas = [
   },
   {
     id: 9,
+    title: "Banner",
+    image: "dist/10-1sx5.jpg",
+    menuTitle: "titleFour",
+
+    //content
+    svg: "dist/svg3.svg",
+    category: "Banner",
+    contentImg: "dist/10-1s.jpg",
+    contentTitle: "國美珩月",
+    contentDesc: "Banner<br>使用軟體：illustrator<br>負責項目:主視覺",
+    contentTime: "2021",
+    style: 1,
+
+    //modal
+    modalCategory: "Banner",
+    modalImgs: [
+      "dist/banner1-1.jpg",
+      "dist/banner1-2.jpg",
+      "dist/bag30.jpg",
+      "dist/V1p1.jpg" 
+    ],
+    modalTitles: ["國美珩月", "國美珩月"],
+    modalDesc: ["國美珩月banner", "國美珩月banner","國美珩月提袋","國美珩月戰旗"],
+    modalMovie:
+      "dist/fin3.mp4",
+    movieTitle: "上碧潭",
+    movieDesc: "上碧潭電子錶板",
+    hasMovie: "false"
+  },
+  {
+    id: 10,
     title: "Motion",
     image: "dist/8-1sx5.jpg",
     menuTitle: "titleFour",
@@ -264,7 +295,7 @@ const datas = [
     contentTitle: "遠雄之星",
     contentDesc: "電子錶板開頭動畫<br>使用軟體：Photoshop.Flash.AE<br>負責項目:插畫設計，動畫製作",
     contentTime: "2016",
-    style: 1,
+    style: 2,
 
     //modal
     modalCategory: "film",
@@ -280,7 +311,7 @@ const datas = [
     hasMovie: "true"
   },
   {
-    id: 10,
+    id: 11,
     title: "Motion",
     image: "dist/9-1sx5.jpg",
     menuTitle: "titleFour",
@@ -292,7 +323,7 @@ const datas = [
     contentTitle: "技佳大河琉御",
     contentDesc: "電子錶板開頭動畫<br>使用軟體：Photoshop.Flash.AE<br>負責項目:插畫設計，動畫製作",
     contentTime: "2017",
-    style: 2,
+    style: 1,
 
     //modal
     modalCategory: "film",
@@ -307,7 +338,8 @@ const datas = [
     movieTitle: "技佳大河琉御",
     movieDesc: "電子錶板開頭動畫",
     hasMovie: "true"
-  }
+  },
+  
 ];
 
 const dataPanel = document.querySelector("#data-panel");
